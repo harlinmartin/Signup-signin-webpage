@@ -1,0 +1,86 @@
+body {
+  background: #f2f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+input.form-control {
+  border: 2px solid gray;   
+  border-radius: 6px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 50px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: blue;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: #fd910d;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    max-width: 500px;
+  }
+
+  .gallery img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    max-width: 400px;
+  }
+
+  .gallery img {
+    width: 220px;
+  }
+}
+
